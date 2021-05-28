@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CodeEditor | Codes With Chandan</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header><h1>Codes with Chandan CODE EDITOR</h1></header>
+
+	<div class="main">
+		<fieldset>
+			<legend>Type code here</legend>
+<textarea id="edit">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Your Code here...</h1>
+</body>
+</html>
+</textarea>
+<div class="run-btn-box" onclick="result()">
+	<h3 id="run-btn">Run code now</h3>
+</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Code Result</legend>
+			<div id="result"></div>
+		</fieldset>
+	</div>
+
+	<script>
+		function result(){
+			var x = document.getElementById("edit").value;	
+			var y = document.getElementById("result");	
+			y.innerHTML = 	x;
+		}
+	</script>
+</body>
+</html>
